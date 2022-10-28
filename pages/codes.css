@@ -1,0 +1,38 @@
+
+/* codes posters */
+#poster {
+  width: 90%;
+  border-radius: 5px;
+}
+
+/* container divs */
+.cd {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px;
+  width: 80%;
+  text-align:center;
+}
+
+.cd:hover {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  width: 85%;
+  text-align:center;
+}
+
+/* get codes buttons */
+#cd {
+  background-color: #0437F2;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  border: solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
