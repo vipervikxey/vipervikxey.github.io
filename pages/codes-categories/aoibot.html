@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aoi.js Bot</title>
+  <link rel="stylesheet" href="../codes.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../prism.css">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #000; color: white;">
+<header class="header">
+  <h1 id="topHeader" style="font-size: 25px; font-family: Poppins, sans-serif;">Discord Bot (aoi.js) <span id="bar" onclick="openNav()" class="fa fa-bars"></span></h1>
+   <div id="Sidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../../index.html" class="fa fa-home"> Home</a>
+    <a href="../codes.html" class="fa fa-code"> Codes</a>
+   <a href="https://youtube.com/channel/UC-yxnYNeZsNbHaN1Wr6iADQ" class="fa fa-youtube" target="_blank"> YouTube</a>
+  <a href="https://github.com/ViperVikxey" id="theme" class="fa fa-github" target="_blank">GitHub</a>
+    <a href="https://www.paypal.me/Lomash274" class="fa fa-paypal"> Donate?</a>
+</div>
+</header>
+<hr>
+<main>
+  <section class="codes-list">
+    <h2>Codes List</h2>
+    <dl>
+      <dt onclick="codeToggle()" style="font-family: Open Sans, sans-serif;">Total Codes: 2</dt>
+        <span id="codeList">
+        <dd style="font-family: Open Sans, sans-serif;" href="#indexCodes"><b>1.</b> Index Codes</dd>
+        <dd style="font-family: Open Sans, sans-serif;"><b>2.</b> Status Codes</dd>
+        </span>
+    </dl>
+  </section>
+  
+  <section class="codes">
+    <div
+    id="indexCodes" class="code">
+      <h1 class="head">Index Codes</h1>
+      <code>
+    const aoijs = require('aoi.js')<br>
+<br>
+const bot = new aoijs.Bot({<br>
+  token: 
+"<span style="color: darkgray;">token goes here</span>",<br>
+  prefix: "<span style="color: darkgray;">prefix goes here</span>",<br>
+<br>
+  intents: "all"<br>
+})<br>
+<br>
+<span style="color: darkgrey;">//eventes</span><br>
+bot.onMessage()<br>
+<br>
+const loader = new aoijs.LoadCommands(bot)<br>
+<br>
+loader.load(bot.cmd,"./commands/")<br>
+<br>
+bot.readyCommand({<br>
+  channel: "",<br>
+  code: `$log[Logged as in $userTag[$clientID]]`<br>
+})
+</code>
+    </div>
+    <br>
+    <br>
+    <div id="statusCodes" class="code">
+      <h1 class="head">Status Codes</h1>
+      <code>
+        bot.status({<br>
+        type: "LISTENING",<br>
+        text: ".help",<br>
+        status: "idle",<br>
+        time: "12"<br>
+        })
+      </code>
+    </div>
+    <br>
+    <br>
+    <a id="preBtn" href="../codes.html">previous</a>
+  </section>
+  <br>
+</main>
+<hr>
+<footer style="text-align: center;">
+  <h3>Contact</h3>
+  <p>vipervikxey@gmail.com</p>
+</footer><script src="../../main.js"></script>
+<script src="../../prism.js"></script>
+</body>
+
+</html>
