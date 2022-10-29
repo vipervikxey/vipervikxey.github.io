@@ -10,18 +10,16 @@
   background-color: #202020;
   padding: 10px;
   border-radius: 10px;
-  margin: 15px;
+  margin: 10px;
   width: 80%;
+  height: 70%;
   text-align:center;
+  transition: 2s;
 }
 
 .cd:hover {
-  background-color: #202020;
-  padding: 10px;
-  border-radius: 20px;
-  margin: 10px;
-  width: 85%;
-  text-align:center;
+  position: relative; bottom: 10px;
+  transition-duration: 2s;
 }
 
 /* get codes buttons */
@@ -35,4 +33,25 @@
   border: solid white;
   border-radius: 5px;
   padding: 5px;
+}
+
+/* codes div */
+.code {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+#preBtn {
+  background-color: #212121;
+  padding: 10px;
+  border-radius: 15px;
+  border-top-left-radius: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+#preBtn:active {
+  background-color: black;
 }
