@@ -15,6 +15,7 @@
   height: 70%;
   text-align:center;
   transition: 2s;
+  font-family: Open Sans, sans-serif;
 }
 
 .cd:hover {
